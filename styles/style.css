@@ -10,7 +10,6 @@
 .header {
   display: grid;
   height: 100vh;
-  min-height: 668px;
   position: relative;
 }
 
@@ -37,8 +36,6 @@
 }
 
 .decorated-zone::after {
-  bottom: 23px;
-  left: 7px;
   border-width: 0 0 1px 1px;
   border-style: solid;
 }
@@ -73,9 +70,17 @@
 }
 
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
+  0% { 
+    opacity: 1; 
+  }
+
+  50% { 
+    opacity: 0.5; 
+  }
+
+  100% { 
+    opacity: 1; 
+  }
 }
 
 .header__title {
@@ -132,7 +137,7 @@
 }
 
 .header__theme-menu-button {
-  padding: 0 13px;
+  padding: 3px 13px;
   border: 1px solid transparent;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
@@ -339,8 +344,18 @@
 }
 
 /* ===== СТИЛИ ДЛЯ ТЕМНОЙ ТЕМЫ ===== */
-.theme-dark {
-  --page-bg-image: url('../images/cover-image-dark.png');
+
+.theme-dark .page {
+ background-color: var(--page-bg-color);
+ background-image: none;
+}
+
+.theme-dark .header {
+  background-image: url('../images/cover-image-dark.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000028; /* Запасной цвет */
 }
 
 .theme-dark .header__text {
@@ -397,6 +412,7 @@
 }
 
 /* Ссылки в темной теме */
+
 .theme-dark .double-text-link {
   color: #F1B2CE;
 }
@@ -422,8 +438,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 10px;
-    min-height: 100vh;
+    padding: 0;
+    margin: 0;
   }
   
   .rec-label {
@@ -432,8 +448,8 @@
   }
   
   .header__title {
-    top: 245px;
-    left: 0;
+    top: 38.8%;
+    left: 2px;
     text-align: left;
     justify-content: flex-start;
     padding-left: 10px;
@@ -442,9 +458,9 @@
   }
   
   .header__text {
-    top: 480px;
+    top: 74.2%;
     left: 10px;
-    right: 10px;
+    right: 10.3px;
     max-width: 100%;
     text-align: left;
     height: auto;
@@ -467,9 +483,9 @@
   }
 
   .header__theme-menu {
-  top: 10%;
-  line-height: 30px;
-}
+    top: 10.2%;
+    line-height: 30px;
+  }
   
   .decorated-zone::after {
     bottom: 0;
@@ -477,7 +493,7 @@
   }
   
   .section-title {
-    margin-top: 13px;
+    margin-top: 11px;
   }
   
   .card__title {
@@ -492,8 +508,8 @@
   .improvement-tips {
     grid-template-columns: 1fr;
     gap: 15px;
-    padding: 0 10px;
-    margin-top: 40px;
+    padding: 0 11px 0 9px;
+    margin-top: 43px;
   }
   
   .reason-card,
@@ -502,8 +518,8 @@
   }
   
   .concentration-blockers {
-    padding: 0 10px;
-    margin-top: 52px;
+    padding: 0 11px 0 10px;
+    margin-top: 53px;
   }
   
   .blocker-card {
@@ -554,7 +570,7 @@
   }
   
   .footer {
-    min-height: 100vh;
+    min-height: auto;
     margin-top: 40px;
   }
   
@@ -572,13 +588,29 @@
   
   .decorated-zone::before {
     top: 15px;
-    right: 9px;
+    right: 6px;
   }
   
   .rec-label {
     right: 37px;
   }
   
+  .header__theme-menu {
+    top: 234px;
+    right: 5px;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    line-height: 1.5;
+  }
+  
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
   .header__title {
     left: 0;
     right: 23.4%;
@@ -588,9 +620,9 @@
   }
   
   .header__text {
-    top: 70.6%;
-    left: 50.6%;
-    right: 8px;
+    top: 70.3%;
+    left: 51%;
+    right: 5px;
     max-width: 100%;
     text-align: left;
     height: auto;
@@ -608,24 +640,24 @@
   }
   
   .decorated-zone::after {
-    bottom: 22px;
-    left: 17px;
+    left: 19px;
+    transform: translateY(256px);
   }
   
   .reasons {
-    margin-top: 58px;
+    margin-top: 54px;
     gap: 15px 20px;
-    padding: 0 9px 0 18px;
+    padding: 0 5px 0 20px;
   }
   
   .reason-card__content {
-    margin-top: 13px;
+    margin-top: 11px;
     margin-bottom: 4px;
   }
   
   .concentration-blockers {
-    padding: 0 8px 0 17px;
-    margin-top: 75px;
+    padding: 0 5px 0 20px;
+    margin-top: 80px;
   }
   
   .concentration-blockers .blocker-card {
@@ -659,7 +691,7 @@
   }
   
   .improvement-tips {
-    padding: 0 10px 0 16px;
+    padding: 0 5px 0 17px;
     margin-top: 83px;
   }
 
@@ -673,17 +705,21 @@
   
   .footer {
     margin-top: 64px;
-    min-height: 1024px;
+  }
+
+  .footer__title {
+    margin-top: 33%;
+    margin-left: 2%;
   }
   
   .visual-gallery {
-    padding: 0 8px 0 17px;
-    margin-top: 80px;
+    padding: 0 5px 0 19px;
+    margin-top: 78px;
   }
 
- .visual-gallery .card__title {
-  margin-top: 0;
- }  
+  .visual-gallery .card__title {
+    margin-top: 0;
+  }  
   
   .gallery {
     display: grid;
@@ -730,23 +766,6 @@
     grid-row: 3;
     max-height: 318px;
   }
-
-  .header__theme-menu {
-    top: 23.2%;
-    right: 9px;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-    line-height: 1.5;
-  }
-  
-  .header__theme-menu-list {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-  }
-
 }
 
 /* Десктопы (1024px и выше) */
@@ -755,10 +774,19 @@
     min-height: 768px;
   }
   
+  .decorated-zone::before {
+    right: 5px;
+  }
+
+  .decorated-zone::after {
+    bottom: 24px;
+    left: 19px;
+  }
+
   .header__theme-menu {
     position: absolute;
     top: 14px;
-    left: 49.4%;
+    left: 50.8%;
     line-height: 28px;
     transform: translateX(-50%);
     width: auto;
@@ -773,8 +801,8 @@
   }
   
   .header__title {
-    top: 31%;
-    transform: translateX(-19px);
+    top: 30%;
+    transform: translateX(-7px);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     right: 245px;
     padding: 0;
@@ -783,8 +811,10 @@
   }
   
   .header__text {
-    font-size: 0; 
+    font-size: 0;
     top: 73%;
+    right: 0;
+    left: 51%;
   }
   
   .header__text::before {
@@ -799,8 +829,8 @@
 
   .reasons {
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    padding: 0 19px 0 6px;
+    gap: 18px;
+    padding: 0 6px 0 19px;
     margin-top: 57px;
   }
 
@@ -810,22 +840,21 @@
   }
   
   .concentration-blockers {
-    padding: 0 20px 0 9px;
+    padding: 0 6px 0 20px;
     margin-top: 84px;
-    align-items: start; 
+    align-items: start;
   }
   
   .concentration-blockers .section-title {
     margin: 0;
     padding-right: 73.5%; 
     text-align: left;
-    align-self: start; 
+    align-self: start;
   }
   
   .blocker-card {
     grid-column: 2; 
     grid-row: 1;
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
@@ -836,7 +865,7 @@
   .blocker-card__content {
     display: flex;
     flex-direction: column;
-    height: 100%; 
+    height: 100%;
   }
   
   .blocker-card__content .card__title {
@@ -853,7 +882,7 @@
   .improvement-tips {
     grid-template-columns: 1fr 2fr;
     gap: 9px;
-    padding: 5px 20px 0px 7px;
+    padding: 5px 6px 0px 20px;
   }
   
   .tip-card__content h3 {
@@ -861,7 +890,7 @@
   }
 
   .visual-gallery {
-    padding: 0 18px 0 7px;
+    padding: 0 6px 0 19px;
     margin-top: 84px;
   }
   
@@ -896,12 +925,12 @@
   }
   
   .footer {
-    min-height: auto;
     margin-top: 61px;
   }
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-top: 11%;
+    margin-top: 0%;
+    margin-left: 1%;
   }
 }

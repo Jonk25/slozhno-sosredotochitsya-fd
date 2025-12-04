@@ -9,7 +9,4 @@
   --title-decor-bg: #FF0070; /* Фон для декоративных элементов в темной теме */
   --title-decor-text: #000028; /* Цвет текста в темной теме */
   --hover-border-color: rgba(255, 0, 112, 0.4);
-  
-  /* Фоны */
-  --page-bg-image: url('../images/cover-image-dark.png');
 }
