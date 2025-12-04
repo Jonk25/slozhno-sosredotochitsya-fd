@@ -1,12 +1,4 @@
 /* Тёмная тема */
-.theme-dark {
-  /* Цвета */
-  --page-bg-color: #000028;
-  --corner-color: #FF0070;
-  --title-color: #DB00FF;
-  --title-box-shadow: #FF0070;
-  --p-color: #F1B2CE;
-  --title-decor-bg: #FF0070; /* Фон для декоративных элементов в темной теме */
-  --title-decor-text: #000028; /* Цвет текста в темной теме */
-  --hover-border-color: rgba(255, 0, 112, 0.4);
+body.theme-dark {
+  color-scheme: dark;
 }

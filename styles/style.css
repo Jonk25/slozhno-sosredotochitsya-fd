@@ -1,3 +1,6 @@
+/* Импорт переменных */
+@import url('./variables.css');
+
 /* ===== ОСНОВНЫЕ СТИЛИ ===== */
 .page {
   background-image: var(--page-bg-image);
@@ -38,14 +41,17 @@
 .decorated-zone::after {
   border-width: 0 0 1px 1px;
   border-style: solid;
+  bottom: 0;
+  left: 0;
 }
 
+/* Элемент REC */
 .rec-label {
   position: absolute;
   top: 16px;
   right: 46px;
-  display: none;
-  color: #FF0070;
+  display: var(--rec-display);
+  color: var(--rec-color);
   font-size: 18px;
   font-family: 'IBM Plex Mono', sans-serif;
   text-transform: uppercase;
@@ -63,23 +69,23 @@
   height: 9px;
   margin-left: 10px;
   vertical-align: middle;
-  background: #ff0000;
+  background: var(--rec-dot-color);
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px rgba(255, 0, 112, 0.8);
+  box-shadow: 0 0 4px 2px var(--rec-glow);
   animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
   0% { 
-    opacity: 1; 
+    opacity: 1;
   }
 
   50% { 
-    opacity: 0.5; 
+    opacity: 0.5;
   }
 
   100% { 
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
@@ -106,13 +112,14 @@
   top: 563px;
   right: 20px;
   max-width: 491px;
-  color: var(--text-color);
+  color: var(--title-decor-text);
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 700;
   background-color: var(--title-decor-bg);
 }
 
+/* Меню темы */
 .header__theme-menu {
   display: flex;
   justify-content: center;
@@ -146,23 +153,23 @@
   text-align: center;
   text-transform: lowercase;
   letter-spacing: 0%;
-  color: var(--corner-color);
+  color: var(--menu-button-color);
   cursor: pointer;
   background: transparent;
   transition: border 0.3s ease;
 }
 
 .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
-  border: 1px solid #32312D66;
+  border: 1px solid var(--menu-button-hover);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
-  border-bottom: 1px solid #353430;
+  border-bottom: 1px solid var(--menu-button-focus);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid #353430;
+  border: 1px solid var(--menu-button-active);
   pointer-events: none;
 }
 
@@ -184,7 +191,7 @@
 .section-title {
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--section-title-color);
 }
 
 .card__title {
@@ -343,54 +350,16 @@
   margin: 0;
 }
 
-/* ===== СТИЛИ ДЛЯ ТЕМНОЙ ТЕМЫ ===== */
-
-.theme-dark .page {
- background-color: var(--page-bg-color);
- background-image: none;
+/* Параграфы */
+p {
+  color: var(--paragraph-color);
 }
 
-.theme-dark .header {
-  background-image: url('../images/cover-image-dark.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #000028; /* Запасной цвет */
-}
-
-.theme-dark .header__text {
-  color: #000028;
-}
-
-.theme-dark p {
-  color: #F1B2CE;
-}
-
-.theme-dark h2.section-title {
-  color: #FF0070;
-}
-
-.theme-dark .rec-label {
-  display: inline-block;
-}
-
-.theme-dark .header__theme-menu-button_active {
-  border: 1px solid #FF0070 !important;
-}
-
-.theme-dark .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
-}
-
-.theme-dark .header__theme-menu-button:not(.header__theme-menu-button_active):focus {
-  border-bottom: 1px solid #FF0070;
-}
-
-/* ===== СТИЛИ ДЛЯ ССЫЛОК ===== */
+/* Ссылки */
 .double-text-link {
   display: inline-block;
   position: relative;
-  color: #353430;
+  color: var(--link-color);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   font-weight: 400;
@@ -406,28 +375,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #FF8DCB;
+  color: var(--link-shadow-color);
   z-index: -1;
   transform: translate(1px, 1px);
 }
 
-/* Ссылки в темной теме */
-
-.theme-dark .double-text-link {
-  color: #F1B2CE;
-}
-
-.theme-dark .double-text-link:hover {
+.double-text-link:hover {
   text-decoration: underline;
-  text-decoration-color: #F1B2CE;
+  text-decoration-color: var(--link-color);
 }
 
-.theme-dark .double-text-link:focus {
-  border: 1px solid #F1B2CE;
-}
-
-.theme-dark .double-text-link::before {
-  color: #FF0070;
+.double-text-link:focus {
+  outline: none;
+  border: 1px solid var(--link-color);
 }
 
 /* ===== МЕДИА-ЗАПРОСЫ ===== */

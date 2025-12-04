@@ -1,15 +1,4 @@
 /* Светлая тема (по умолчанию) */
-:root {
-  /* Цвета */
-  --page-bg-color: #FFF1F7;
-  --corner-color: #353430;
-  --title-color: #FFC2E6;
-  --title-box-shadow: #FF8DCB;
-  --text-color: #353430;
-  --title-decor-bg: #FF8DCB; /* Фон для декоративных элементов в светлой теме */
-  --title-decor-text: #353430; /* Цвет текста в светлой теме */
-  --hover-border-color: rgba(53, 52, 48, 0.4);
-  
-  /* Фоны */
-  --page-bg-image: url('../images/cover-image-light.png');
+body {
+  color-scheme: light;
 }
