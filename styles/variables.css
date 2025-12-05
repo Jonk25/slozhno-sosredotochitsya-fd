@@ -47,7 +47,8 @@
   --section-title-color: #FF0070;
   
   /* Фоны */
-  --page-bg-image: url('../images/cover-image-dark.png');
+  --page-bg-image: none;
+  --header-bg-image: url('../images/cover-image-dark.png');
   
   /* Элемент REC */
   --rec-color: #FF0070;

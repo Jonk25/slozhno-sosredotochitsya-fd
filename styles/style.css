@@ -4,16 +4,21 @@
 /* ===== ОСНОВНЫЕ СТИЛИ ===== */
 .page {
   background-image: var(--page-bg-image);
+  background-color: var(--page-bg-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: var(--page-bg-color);
 }
 
 .header {
   display: grid;
   height: 100vh;
   position: relative;
+  background-image: var(--header-bg-image);
+  background-color: var(--page-bg-color); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .decorated-zone {
@@ -48,8 +53,8 @@
 /* Элемент REC */
 .rec-label {
   position: absolute;
-  top: 16px;
-  right: 46px;
+  top: 2%;
+  right: 3.4%;
   display: var(--rec-display);
   color: var(--rec-color);
   font-size: 18px;
@@ -400,6 +405,7 @@ p {
     position: relative;
     padding: 0;
     margin: 0;
+    min-height: 668px;
   }
   
   .rec-label {
@@ -408,8 +414,8 @@ p {
   }
   
   .header__title {
-    top: 38.8%;
-    left: 2px;
+    top: 34.8%;
+    left: 1%;
     text-align: left;
     justify-content: flex-start;
     padding-left: 10px;
@@ -418,7 +424,7 @@ p {
   }
   
   .header__text {
-    top: 74.2%;
+    top: 71.8%;
     left: 10px;
     right: 10.3px;
     max-width: 100%;
@@ -448,8 +454,8 @@ p {
   }
   
   .decorated-zone::after {
-    bottom: 0;
-    left: 10px;
+    bottom: 2.4%;
+    left: 3%;
   }
   
   .section-title {
@@ -469,7 +475,10 @@ p {
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 0 11px 0 9px;
-    margin-top: 43px;
+  }
+
+  .reasons {
+    margin-top: 24px;
   }
   
   .reason-card,
@@ -504,6 +513,10 @@ p {
     position: static;
     margin-bottom: 20px;
   }
+
+  .improvement-tips {
+    margin-top: 40px;
+  }
   
   .improvement-tips .card__title__content {
     margin: 0;
@@ -530,13 +543,13 @@ p {
   }
   
   .footer {
-    min-height: auto;
+    min-height: 668px;
     margin-top: 40px;
   }
   
   .footer__title {
     font-size: clamp(7rem, 6.5rem + 2vw, 8rem);
-    margin: 10px 10px 0 0;
+    margin: 2px 0px 2px 0;
   }
 }
 
@@ -547,16 +560,16 @@ p {
   }
   
   .decorated-zone::before {
-    top: 15px;
-    right: 6px;
+    top: 1.8%;
+    right: 1%;
   }
   
   .rec-label {
-    right: 37px;
+    right: 4.4%;
   }
   
   .header__theme-menu {
-    top: 234px;
+    top: 23%;
     right: 5px;
     transform: translateY(-50%);
     margin: 0;
@@ -600,13 +613,13 @@ p {
   }
   
   .decorated-zone::after {
-    left: 19px;
-    transform: translateY(256px);
+    left: 2.6%;
+    bottom: 2%;
   }
   
   .reasons {
-    margin-top: 54px;
-    gap: 15px 20px;
+    margin-top: 57px;
+    gap: 19px 20px;
     padding: 0 5px 0 20px;
   }
   
@@ -617,7 +630,7 @@ p {
   
   .concentration-blockers {
     padding: 0 5px 0 20px;
-    margin-top: 80px;
+    margin-top: 75px;
   }
   
   .concentration-blockers .blocker-card {
@@ -652,7 +665,7 @@ p {
   
   .improvement-tips {
     padding: 0 5px 0 17px;
-    margin-top: 83px;
+    margin-top: 85px;
   }
 
   .tip-card__content h3 {
@@ -668,7 +681,7 @@ p {
   }
 
   .footer__title {
-    margin-top: 33%;
+    margin-top: 1%;
     margin-left: 2%;
   }
   
@@ -735,7 +748,7 @@ p {
   }
   
   .decorated-zone::before {
-    right: 5px;
+    right: 0.4%;
   }
 
   .decorated-zone::after {
@@ -745,8 +758,8 @@ p {
 
   .header__theme-menu {
     position: absolute;
-    top: 14px;
-    left: 50.8%;
+    top: 1.7%;
+    left: 50.9%;
     line-height: 28px;
     transform: translateX(-50%);
     width: auto;
@@ -789,19 +802,18 @@ p {
 
   .reasons {
     grid-template-columns: 1fr 2fr;
-    gap: 18px;
-    padding: 0 6px 0 19px;
+    gap: 23px 12px;
+    padding: 0 5px 0 19px;
     margin-top: 57px;
   }
 
   .reason-card__content {
     margin-top: 10px;
-    margin-left: -5.8px;
   }
   
   .concentration-blockers {
     padding: 0 6px 0 20px;
-    margin-top: 84px;
+    margin-top: 81px;
     align-items: start;
   }
   
