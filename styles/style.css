@@ -859,16 +859,20 @@ p {
   }
   
   .tip-card__content h3 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .tip-block:not(:last-child) {
+    margin-bottom: 5px;
   }
 
   .visual-gallery {
     padding: 0 20px 0 21px;
-    margin-top: 90px;
+    margin-top: 87px;
   }
   
   .visual-gallery .card__title {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   }  
 
   .gallery {
