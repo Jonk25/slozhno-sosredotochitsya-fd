@@ -53,8 +53,8 @@
 /* Элемент REC */
 .rec-label {
   position: absolute;
-  top: 2%;
-  right: 3.4%;
+  top: 2.5%;
+  right: 5%;
   display: var(--rec-display);
   color: var(--rec-color);
   font-size: 18px;
@@ -414,8 +414,8 @@ p {
   }
   
   .header__title {
-    top: 34.8%;
-    left: 1%;
+    top: 35.5%;
+    left: 0.7%;
     text-align: left;
     justify-content: flex-start;
     padding-left: 10px;
@@ -424,7 +424,7 @@ p {
   }
   
   .header__text {
-    top: 71.8%;
+    top: 72.8%;
     left: 10px;
     right: 10.3px;
     max-width: 100%;
@@ -444,8 +444,8 @@ p {
   }
   
   .decorated-zone::before {
-    top: 5px;
-    right: 10px;
+    top: 1.4%;
+    right: 3%;
   }
 
   .header__theme-menu {
@@ -454,7 +454,7 @@ p {
   }
   
   .decorated-zone::after {
-    bottom: 2.4%;
+    bottom: 1.4%;
     left: 3%;
   }
   
@@ -478,7 +478,7 @@ p {
   }
 
   .reasons {
-    margin-top: 24px;
+    margin-top: 28px;
   }
   
   .reason-card,
@@ -515,7 +515,7 @@ p {
   }
 
   .improvement-tips {
-    margin-top: 40px;
+    margin-top: 44px;
   }
   
   .improvement-tips .card__title__content {
@@ -544,12 +544,12 @@ p {
   
   .footer {
     min-height: 668px;
-    margin-top: 40px;
+    margin-top: 36px;
   }
   
   .footer__title {
     font-size: clamp(7rem, 6.5rem + 2vw, 8rem);
-    margin: 2px 0px 2px 0;
+    margin: 2px 18px 2px 22px;
   }
 }
 
@@ -560,17 +560,17 @@ p {
   }
   
   .decorated-zone::before {
-    top: 1.8%;
-    right: 1%;
+    right: 2.6%;
   }
   
   .rec-label {
-    right: 4.4%;
+    right: 6.4%;
+    top: 2%;
   }
   
   .header__theme-menu {
-    top: 23%;
-    right: 5px;
+    top: 23.6%;
+    right: 2.6%;
     transform: translateY(-50%);
     margin: 0;
     padding: 0;
@@ -586,16 +586,15 @@ p {
 
   .header__title {
     left: 0;
-    right: 23.4%;
+    right: 24.9%;
     top: 23%;
     margin: 0;
     padding: 0;
   }
   
   .header__text {
-    top: 70.3%;
-    left: 51%;
-    right: 5px;
+    top: 70.7%;
+    left: 50%;
     max-width: 100%;
     text-align: left;
     height: auto;
@@ -618,9 +617,9 @@ p {
   }
   
   .reasons {
-    margin-top: 57px;
+    margin-top: 59px;
     gap: 19px 20px;
-    padding: 0 5px 0 20px;
+    padding: 0 19px 0 20px;
   }
   
   .reason-card__content {
@@ -629,7 +628,7 @@ p {
   }
   
   .concentration-blockers {
-    padding: 0 5px 0 20px;
+    padding: 0 20px 0 20px;
     margin-top: 75px;
   }
   
@@ -664,7 +663,7 @@ p {
   }
   
   .improvement-tips {
-    padding: 0 5px 0 17px;
+    padding: 0 20px 0 20px;
     margin-top: 85px;
   }
 
@@ -677,7 +676,9 @@ p {
   }
   
   .footer {
-    margin-top: 64px;
+    margin-top: 7.5%;
+    min-height: 1024px;
+    margin-right: 2%;
   }
 
   .footer__title {
@@ -686,7 +687,7 @@ p {
   }
   
   .visual-gallery {
-    padding: 0 5px 0 19px;
+    padding: 0 20px 0 19px;
     margin-top: 78px;
   }
 
@@ -748,18 +749,19 @@ p {
   }
   
   .decorated-zone::before {
-    right: 0.4%;
+    right: 2%;
+    top: 2.7%;
   }
 
   .decorated-zone::after {
-    bottom: 24px;
-    left: 19px;
+    bottom: 2.7%;
+    left: 2%;
   }
 
   .header__theme-menu {
     position: absolute;
-    top: 1.7%;
-    left: 50.9%;
+    top: 2.2%;
+    left: 49.9%;
     line-height: 28px;
     transform: translateX(-50%);
     width: auto;
@@ -777,7 +779,7 @@ p {
     top: 30%;
     transform: translateX(-7px);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    right: 245px;
+    right: 25%;
     padding: 0;
     margin: 0;
     left: 0;
@@ -785,9 +787,8 @@ p {
   
   .header__text {
     font-size: 0;
-    top: 73%;
     right: 0;
-    left: 51%;
+    left: 50%;
   }
   
   .header__text::before {
@@ -802,9 +803,9 @@ p {
 
   .reasons {
     grid-template-columns: 1fr 2fr;
-    gap: 23px 12px;
-    padding: 0 5px 0 19px;
-    margin-top: 57px;
+    gap: 22px 10px;
+    padding: 0 20px 0 19px;
+    margin-top: 60px;
   }
 
   .reason-card__content {
@@ -812,8 +813,8 @@ p {
   }
   
   .concentration-blockers {
-    padding: 0 6px 0 20px;
-    margin-top: 81px;
+    padding: 0 20px 0 20px;
+    margin-top: 82px;
     align-items: start;
   }
   
@@ -854,7 +855,7 @@ p {
   .improvement-tips {
     grid-template-columns: 1fr 2fr;
     gap: 9px;
-    padding: 5px 6px 0px 20px;
+    padding: 4px 20px 0px 20px;
   }
   
   .tip-card__content h3 {
@@ -862,8 +863,8 @@ p {
   }
 
   .visual-gallery {
-    padding: 0 6px 0 19px;
-    margin-top: 84px;
+    padding: 0 20px 0 21px;
+    margin-top: 81px;
   }
   
   .visual-gallery .card__title {
@@ -898,11 +899,12 @@ p {
   
   .footer {
     margin-top: 61px;
+    min-height: 768px;
   }
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-top: 0%;
-    margin-left: 1%;
+    margin-left: 0%;
   }
 }
