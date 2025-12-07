@@ -522,6 +522,11 @@ p {
   .improvement-tips .card__title__content {
     margin: 0;
   }
+
+  .improvement-tips .tip-card__content .tip-block:nth-child(4),
+  .improvement-tips .tip-card__content .tip-block:nth-child(5) {
+    transform: translateY(3px);
+  } 
   
   .tip-block:not(:last-child) {
     margin-bottom: 22px;
@@ -529,7 +534,7 @@ p {
   
   .visual-gallery {
     padding: 0 10px 0 9px;
-    margin-top: 57px;
+    margin-top: 59px;
   }
   
   .gallery {
