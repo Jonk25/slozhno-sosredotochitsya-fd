@@ -883,6 +883,10 @@ p {
     gap: 20px;
   }
 
+  .gallery__image {
+    height: 100%;
+  }
+
   .gallery__item:nth-child(1) {
     max-height: 280px;
   }
