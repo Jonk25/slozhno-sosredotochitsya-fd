@@ -1,64 +1,12 @@
 :root {
-  /* ===== ОБЩИЕ ПЕРЕМЕННЫЕ ===== */
+  --font-family: 'IBM Plex Mono', monospace;
+  --font-size: 18px;
+  --gap-small: 10px;
+  --gap-medium: 20px;
+  --gap-large: 40px;
   
-  /* Цвета для светлой темы (значения по умолчанию) */
-  --page-bg-color: #FFF1F7;
-  --corner-color: #353430;
-  --title-color: #FFC2E6;
-  --title-box-shadow: #FF8DCB;
-  --text-color: #353430;
-  --title-decor-bg: #FF8DCB;
-  --title-decor-text: #353430;
-  --hover-border-color: rgba(53, 52, 48, 0.4);
-  --link-color: #353430;
-  --link-shadow-color: #FF8DCB;
-  --paragraph-color: #353430;
-  --section-title-color: var(--text-color);
-  
-  /* Фоны */
-  --page-bg-image: url('../images/cover-image-light.png');
-  
-  /* Элемент REC */
-  --rec-color: #FF0070;
-  --rec-dot-color: #ff0000;
-  --rec-glow: rgba(255, 0, 112, 0.8);
-  --rec-display: none; /* В светлой теме скрыт */
-  
-  /* Кнопки меню */
-  --menu-button-color: #353430;
-  --menu-button-hover: rgba(50, 49, 45, 0.4);
-  --menu-button-focus: #353430;
-  --menu-button-active: #353430;
-}
-
-/* ===== ПЕРЕМЕННЫЕ ДЛЯ ТЕМНОЙ ТЕМЫ ===== */
-.theme-dark {
-  --page-bg-color: #000028;
-  --corner-color: #FF0070;
-  --title-color: #DB00FF;
-  --title-box-shadow: #FF0070;
-  --text-color: #F1B2CE;
-  --title-decor-bg: #FF0070;
-  --title-decor-text: #000028;
-  --hover-border-color: rgba(255, 0, 112, 0.4);
-  --link-color: #F1B2CE;
-  --link-shadow-color: #FF0070;
-  --paragraph-color: #F1B2CE;
-  --section-title-color: #FF0070;
-  
-  /* Фоны */
-  --page-bg-image: none;
-  --header-bg-image: url('../images/cover-image-dark.png');
-  
-  /* Элемент REC */
-  --rec-color: #FF0070;
-  --rec-dot-color: #ff0000;
-  --rec-glow: rgba(255, 0, 112, 0.8);
-  --rec-display: inline-block; /* В темной теме виден */
-  
-  /* Кнопки меню */
-  --menu-button-color: #FF0070;
-  --menu-button-hover: rgba(255, 0, 112, 0.4);
-  --menu-button-focus: #FF0070;
-  --menu-button-active: #FF0070;
+  /* Общие размеры */
+  --header-height-mobile: 668px;
+  --header-height-tablet: 1024px;
+  --header-height-desktop: 768px;
 }

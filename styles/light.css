@@ -1,4 +1,56 @@
-/* Светлая тема (по умолчанию) */
-body {
-  color-scheme: light;
+/* Переменные для светлой темы */
+:root {
+  --page-bg-color: #FFF1F7;
+  --corner-color: #353430;
+  --title-color: #FFC2E6;
+  --title-box-shadow: #FF8DCB;
+  --text-color: #353430;
+  --title-decor-bg: #FF8DCB;
+  --title-decor-text: #353430;
+  --hover-border-color: rgba(53, 52, 48, 0.4);
+  --link-color: #353430;
+  --link-shadow-color: #FF8DCB;
+  --paragraph-color: #353430;
+  --section-title-color: var(--text-color);
+
+  /* Фоны */
+  --page-bg-image: url('../images/cover-image-light.png');
+
+  /* Элемент REC - установлен на скрытие в светлой теме */
+  --rec-color: #FF0070;
+  --rec-dot-color: #ff0000;
+  --rec-glow: rgba(255, 0, 112, 0.8);
+  --rec-display: none;
+
+  /* Кнопки меню */
+  --menu-button-color: #353430;
+  --menu-button-hover: rgba(50, 49, 45, 0.4);
+  --menu-button-focus: #353430;
+  --menu-button-active: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-bg-color: #FFF1F7;
+    --corner-color: #353430;
+    --title-color: #FFC2E6;
+    --title-box-shadow: #FF8DCB;
+    --text-color: #353430;
+    --title-decor-bg: #FF8DCB;
+    --title-decor-text: #353430;
+    --hover-border-color: rgba(53, 52, 48, 0.4);
+    --link-color: #353430;
+    --link-shadow-color: #FF8DCB;
+    --paragraph-color: #353430;
+    --section-title-color: var(--text-color);
+
+    --page-bg-image: url('../images/cover-image-light.png');
+
+    --rec-display: none; 
+
+    --menu-button-color: #353430;
+    --menu-button-hover: rgba(50, 49, 45, 0.4);
+    --menu-button-focus: #353430;
+    --menu-button-active: #353430;
+  }
 }

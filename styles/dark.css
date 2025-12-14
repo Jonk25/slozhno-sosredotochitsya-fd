@@ -1,4 +1,28 @@
-/* Тёмная тема */
-body.theme-dark {
-  color-scheme: dark;
+.theme-dark {
+  --page-bg-color: #000028;
+  --corner-color: #FF0070;
+  --title-color: #DB00FF;
+  --title-box-shadow: #FF0070;
+  --text-color: #F1B2CE;
+  --title-decor-bg: #FF0070;
+  --title-decor-text: #000028;
+  --hover-border-color: rgba(255, 0, 112, 0.4);
+  --link-color: #F1B2CE;
+  --link-shadow-color: #FF0070;
+  --paragraph-color: #F1B2CE;
+  --section-title-color: #FF0070;
+
+  /* Фоны */
+  --page-bg-image: none;
+  --header-bg-image: url('../images/cover-image-dark.png');
+
+  /* Элемент REC - установлен на отображение в темной теме */
+  --rec-display: inline-block;
+
+  /* Кнопки меню */
+  --menu-button-color: #FF0070;
+  --menu-button-hover: rgba(255, 0, 112, 0.4);
+  --menu-button-focus: #FF0070;
+  --menu-button-active: #FF0070;
 }
+
