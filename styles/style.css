@@ -742,6 +742,7 @@ p {
    
   .blocker-card { 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     grid-row: 2;
     gap: 20px; 
@@ -750,6 +751,8 @@ p {
   } 
 
   .blocker-card__item {
+    width: calc(33.333% - 13.333px);
+    box-sizing: border-box;
     margin: 0;
   }
    
